@@ -162,10 +162,10 @@ export default function HomePage() {
             <p className="text-on-surface-variant font-bold uppercase tracking-widest text-xs mb-8 md:mb-10">Reconnu par des organisations leaders</p>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 opacity-50 grayscale">
               <span className="text-base md:text-2xl font-bold text-gray-900 dark:text-white">ACCOR</span>
-              <span class="text-base md:text-2xl font-bold text-gray-900 dark:text-white">ORANGE</span>
-              <span class="text-base md:text-2xl font-bold text-gray-900 dark:text-white">SOCIETE GENERALE</span>
-              <span class="text-base md:text-2xl font-bold text-gray-900 dark:text-white">AIRBUS</span>
-              <span class="text-base md:text-2xl font-bold text-gray-900 dark:text-white">LVMH</span>
+              <span className="text-base md:text-2xl font-bold text-gray-900 dark:text-white">ORANGE</span>
+              <span className="text-base md:text-2xl font-bold text-gray-900 dark:text-white">SOCIETE GENERALE</span>
+              <span className="text-base md:text-2xl font-bold text-gray-900 dark:text-white">AIRBUS</span>
+              <span className="text-base md:text-2xl font-bold text-gray-900 dark:text-white">LVMH</span>
             </div>
             <div className="mt-10 md:mt-16 flex justify-center gap-6 md:gap-8">
               <div className="flex flex-col items-center">
@@ -220,9 +220,9 @@ export default function HomePage() {
                 <p className="text-sm text-on-surface-variant mb-6">Lisez automatiquement les pièces d’identité, passeports et cartes de séjour.</p>
                 <ul className="space-y-3 text-sm font-medium text-gray-900 dark:text-white">
                   <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Scan CNI / Passeport</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Reconnaissance automatique des champs</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Prise de photo signée</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> API d’OCR intégrée</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Reconnaissance automatique des champs</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Prise de photo signée</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> API d’OCR intégrée</li>
                 </ul>
               </div>
               <div className="card-gradient border border-white/5 p-6 md:p-8 rounded-xl ring-2 ring-primary/20">
@@ -230,9 +230,9 @@ export default function HomePage() {
                 <p className="text-sm text-on-surface-variant mb-6">Générez des badges d’accès personnalisés avec QR code et photo.</p>
                 <ul className="space-y-3 text-sm font-medium text-gray-900 dark:text-white">
                   <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Impression WiFi / Bluetooth</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> QR code de sortie</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Badge temporaire ou permanent</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Logo entreprise personnalisé</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> QR code de sortie</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Badge temporaire ou permanent</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Logo entreprise personnalisé</li>
                 </ul>
               </div>
               <div className="card-gradient border border-white/5 p-6 md:p-8 rounded-xl">
@@ -240,9 +240,9 @@ export default function HomePage() {
                 <p className="text-sm text-on-surface-variant mb-6">Tableaux de bord et rapports détaillés pour le suivi des entrées/sorties.</p>
                 <ul className="space-y-3 text-sm font-medium text-gray-900 dark:text-white">
                   <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Registre numérique inviolable</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Export PDF / Excel</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Alertes en temps réel</li>
-                  <li className="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Dashboard complet</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Export PDF / Excel</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Alertes en temps réel</li>
+                  <li className="flex items-center gap-2"><span className="w-1 h-1 bg-primary rounded-full"></span> Dashboard complet</li>
                 </ul>
               </div>
             </div>

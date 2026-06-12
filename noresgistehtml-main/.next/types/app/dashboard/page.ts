@@ -1,4 +1,4 @@
-// File: D:\Sam-corporate\noresgistehtml\app\dashboard\page.tsx
+// File: C:\Users\Gervais\Downloads\noresgistehtml-main (1)\noresgistehtml-main\app\dashboard\page.tsx
 import * as entry from '../../../../app/dashboard/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
