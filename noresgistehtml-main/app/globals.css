@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root, html.dark {
+  --primary: #00fa6c;
+  --surface: #111410;
+  --surface-dim: #0b0f0b;
+  --surface-container: #191d18;
+  --on-surface: #e2e3dd;
+  --on-surface-variant: #c2c9bd;
+}
+
+html.light {
+  --primary: #00a856;
+  --surface: #f9f9f9;
+  --surface-dim: #f3f4f6;
+  --surface-container: #ffffff;
+  --on-surface: #1a1c1c;
+  --on-surface-variant: #46464e;
+}
+
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(0, 250, 108, 0.4);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 250, 108, 0.08) 0%, rgba(17, 20, 16, 1) 70%);
+}
+
+.card-gradient {
+  background: linear-gradient(180deg, rgba(25, 29, 24, 1) 0%, rgba(17, 20, 16, 1) 100%);
+}
+
+.nav-blur {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: var(--primary);
+  margin-left: 2px;
+  vertical-align: middle;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+/* Light Theme Overrides for hardcoded colors (borders, whites) */
+html.light .hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 250, 108, 0.08) 0%, #f9f9f9 100%);
+}
+
+html.light .card-gradient {
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+}
+
+html.light .border-white\/5,
+html.light .border-white\/10,
+html.light .border-white\/20 {
+  border-color: #e2e5f1;
+}
+
+html.light .bg-black\/40 {
+  background-color: #f3f4f6;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html.light .hover\:bg-white\/5:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html.light .material-symbols-outlined {
+  color: #4b5563;
+}
+
+html.light button .material-symbols-outlined {
+  color: currentColor;
+}
+
+html.light .glow-text {
+  text-shadow: 0 0 20px rgba(0, 168, 86, 0.3);
+}
+
+html.light .logo-theme {
+  filter: invert(1);
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+html.light .bg-white\/20 {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html.light .bg-white\/30 {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+html.light .glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+}
+
+html.light .stat-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+}
+
+/* Specific elements styles */
+
+.why-card {
+  background-color: #000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.why-card:hover {
+  background-color: #0a0a0a !important;
+  transform: translateY(-2px);
+}
+
+.why-card h3,
+.why-card p,
+.why-card .text-on-surface-variant {
+  color: #ffffff !important;
+}
+
+.sector-card {
+  background-color: #000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.sector-card:hover {
+  background-color: #0a0a0a !important;
+  transform: translateY(-2px);
+}
+
+.sector-card h3,
+.sector-card p,
+.sector-card a {
+  color: #ffffff !important;
+}
+
+.sector-card a:hover {
+  color: #00fa6c !important;
+}
+
+.sector-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.sector-card:hover .sector-img {
+  opacity: 1;
+}
+
+.glass-card {
+  background: rgba(25, 29, 24, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-card {
+  background: rgba(25, 29, 24, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00fa6c;
+  border-radius: 10px;
+}
+
+/* Modals animations & overlays */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #191d18;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+}
+
+html.light .modal-content {
+  background-color: #ffffff;
+  border: 1px solid #e2e5f1;
+}
+
+/* Admin Dashboard SVG Styles */
+#chartContainer svg {
+  width: 100%;
+  height: 100%;
+}
