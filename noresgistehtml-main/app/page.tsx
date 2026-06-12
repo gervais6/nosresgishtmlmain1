@@ -341,7 +341,7 @@ export default function HomePage() {
               <ul className="space-y-2 md:space-y-4 text-xs md:text-sm text-on-surface-variant">
                 <li><a className="hover:text-primary" href="#">À propos</a></li>
                 <li><a className="hover:text-primary" href="#">Sécurité</a></li>
-                <li><a cassName="hover:text-primary" href="#">Contact</a></li>
+                <li><a className="hover:text-primary" href="#">Contact</a></li>
               </ul>
             </div>
           </div>
